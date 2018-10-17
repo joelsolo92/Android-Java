@@ -78,9 +78,9 @@ public class PalindromeActivity extends AppCompatActivity {
             }
 
             if (newText.equals(reversedText))
-                Log.e("tag", "Palindrome");
+                Toast.makeText(this,"\'" + text + "\' is a Palindrome",Toast.LENGTH_SHORT).show();
             else
-                Log.e("tag", "Not Palindrome");
+                Toast.makeText(this,"\'" + text + "\' is not a Palindrome",Toast.LENGTH_SHORT).show();
 
         }
     }
