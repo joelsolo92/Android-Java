@@ -56,6 +56,7 @@ public class PalindromeActivity extends AppCompatActivity {
     public void getValues() {
 
         String text = "";
+        String reversedText = "";
         text = mValue.getText().toString();
 
         if (text.isEmpty()) {
@@ -65,6 +66,21 @@ public class PalindromeActivity extends AppCompatActivity {
 
             String newText = text.replaceAll("[^a-zA-Z0-9]", "");
             Log.e("tag", newText);
+
+            Stack stack = new Stack();
+
+            for (int x = 0; x < newText.length(); x++){
+                stack.push(newText.charAt(x));
+            }
+
+            while (!stack.isEmpty()){
+                reversedText = reversedText + stack.pop();
+            }
+
+            if (newText.equals(reversedText))
+                Log.e("tag", "Palindrome");
+            else
+                Log.e("tag", "Not Palindrome");
 
         }
     }
