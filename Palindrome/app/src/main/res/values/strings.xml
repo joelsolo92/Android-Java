@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Palindrome</string>
+    <string name="lbl_enter_values">Please enter a word / phrase / numbers </string>
 </resources>
