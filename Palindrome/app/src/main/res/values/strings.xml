@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Palindrome</string>
+    <string name="lbl_enter_values">Please enter a word / phrase / numbers </string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_clear">Clear</string>
+    <string name="btn_quit">Quit</string>
+</resources>

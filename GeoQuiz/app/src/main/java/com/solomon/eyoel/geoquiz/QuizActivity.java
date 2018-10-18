@@ -1,5 +1,9 @@
 package com.solomon.eyoel.geoquiz;
 
+<<<<<<< HEAD
+=======
+import android.content.Intent;
+>>>>>>> d6a5cac59ed2686d534b89b03e6f324929837cd3
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,6 +19,10 @@ public class QuizActivity extends AppCompatActivity {
     private Button mTrueButton;
     private Button mFalseButton;
     private Button mNextButton;
+<<<<<<< HEAD
+=======
+    private Button mCheatButton;
+>>>>>>> d6a5cac59ed2686d534b89b03e6f324929837cd3
     private TextView mQuestionTextView;
 
     private static final String TAG = "QuizActivity";
@@ -45,6 +53,10 @@ public class QuizActivity extends AppCompatActivity {
         mFalseButton = (Button) findViewById(R.id.false_button);
         mNextButton = (Button)findViewById(R.id.next_button);
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view) ;
+<<<<<<< HEAD
+=======
+        mCheatButton = (Button) findViewById(R.id.cheat_button);
+>>>>>>> d6a5cac59ed2686d534b89b03e6f324929837cd3
 
         int question = mQuestionBank[mCurrentIndex].getTextResId();
         mQuestionTextView.setText(question);
@@ -64,6 +76,20 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
+=======
+        mCheatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+           // Intent intent = new Intent(QuizActivity.this, CheatActivity.class);
+                // startActivity(intent);
+                boolean answerIsTrue = mQuestionBank[mCurrentIndex].isAnswerTrue();
+                Intent intent = CheatActivity.newIntent(QuizActivity.this,answerIsTrue);
+                startActivity(intent);
+            }
+        });
+
+>>>>>>> d6a5cac59ed2686d534b89b03e6f324929837cd3
         mNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

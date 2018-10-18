@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.solomon.eyoel.geoquiz">
+    package="com.solomon.eyoel.palindrome">
 
     <application
         android:allowBackup="true"
@@ -9,21 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
-
-=======
->>>>>>> d6a5cac59ed2686d534b89b03e6f324929837cd3
-        <activity android:name=".QuizActivity">
+        <activity android:name=".PalindromeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-=======
-        <activity android:name=".CheatActivity"></activity>
->>>>>>> d6a5cac59ed2686d534b89b03e6f324929837cd3
     </application>
 
 </manifest>
