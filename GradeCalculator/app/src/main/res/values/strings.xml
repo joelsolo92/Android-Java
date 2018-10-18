@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GradeCalculator</string>
+    <string name="lbl_attendance">Attendance</string>
+    <string name="lbl_project_1">Project 1</string>
+    <string name="lbl_project_2">Project 2</string>
+    <string name="lbl_project_3">Project 3</string>
+    <string name="lbl_midterm">Midterm</string>
+    <string name="lbl_final">Final</string>
+    <string name="lbl_grade">Grade</string>
+    <string name="btn_calculate">Calculate</string>
+    <string name="btn_clear_all">Clear All</string>
+    <string name="tv_your_grade_is">Your Grade: </string>
+
+</resources>

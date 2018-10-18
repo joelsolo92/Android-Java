@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    tools:context=".CalculateGrade">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/labels_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_attendance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="26dp"
+                    android:layout_marginTop="35dp"
+                    android:text="@string/lbl_attendance" />
+
+                <TextView
+                    android:id="@+id/tv_project_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="26dp"
+                    android:text="@string/lbl_project_1" />
+
+                <TextView
+                    android:id="@+id/tv_project_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="26dp"
+                    android:text="@string/lbl_project_2" />
+
+                <TextView
+                    android:id="@+id/tv_project_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="26dp"
+                    android:text="@string/lbl_project_3" />
+
+                <TextView
+                    android:id="@+id/tv_midterm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="26dp"
+                    android:text="@string/lbl_midterm" />
+
+                <TextView
+                    android:id="@+id/tv_final"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/lbl_final" />
+
+                <Button
+                    android:id="@+id/btn_calculate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/btn_calculate" />
+
+                <Button
+                    android:id="@+id/btn_clear_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="26dp"
+                    android:text="@string/btn_clear_all" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/edit_text_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_attendance"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:ems="10"
+                    android:fadingEdge="horizontal"
+                    android:hint="0-10"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/et_project_1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:hint="0-100"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/et_project_2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:hint="0-100"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/et_project_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:hint="0-100"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/et_midterm"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:hint="0-100"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/et_final"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:hint="0-100"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/tv_your_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/tv_your_grade_is" />
+
+                <TextView
+                    android:id="@+id/tv_calculated_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:textColorHighlight="?attr/colorError" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
