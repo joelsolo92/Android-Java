@@ -62,7 +62,10 @@ public class PalindromeActivity extends AppCompatActivity {
         if (text.isEmpty()) {
             Toast.makeText(this, "Fieid can not be empty.", Toast.LENGTH_SHORT).show();
             Log.e("this tag", "error");
-        } else {
+        } else if (text.length() < 3) {
+            Toast.makeText(this, "Your entry must contain atleast 3 letters / numbers", Toast.LENGTH_SHORT).show();
+        }
+        else {
 
             String newText = text.replaceAll("[^a-zA-Z0-9]", "");
             Log.e("tag", newText);
@@ -76,11 +79,11 @@ public class PalindromeActivity extends AppCompatActivity {
             while (!stack.isEmpty()){
                 reversedText = reversedText + stack.pop();
             }
-
-            if (newText.equals(reversedText))
-                Toast.makeText(this,"\'" + text + "\' is a Palindrome",Toast.LENGTH_SHORT).show();
+            Log.e("tag",reversedText);
+            if (newText.toLowerCase().equals(reversedText.toLowerCase()))
+                Toast.makeText(this,"\"" + text + "\" is a Palindrome",Toast.LENGTH_SHORT).show();
             else
-                Toast.makeText(this,"\'" + text + "\' is not a Palindrome",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,"\"" + text + "\" is not a Palindrome",Toast.LENGTH_SHORT).show();
 
         }
     }
