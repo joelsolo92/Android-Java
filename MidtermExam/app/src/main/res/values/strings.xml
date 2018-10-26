@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">MidtermExam</string>
+    <string name="buttonNext">Next</string>
+    <string name="buttonFinish">Finish</string>
+    <string name="buttonClear">Clear</string>
+
+    <string name="question_1">What is an intent?</string>
+    <string name="question_2">What is a context?</string>
+    <string name="question_3">Which describes the onCreate method?</string>
+    <string name="question_4">Which is the best way to pass data to another Activity</string>
+    <string name="question_5">Which of these describes a fragment?</string>
+    <string name="question_6">Which of these fragment lifecycles occurs first?</string>
+    <string name="question_7">What is an Extra?</string>
+    <string name="question_8">What is a padding?</string>
+    <string name="question_9">Which of these describes a Constraint Layout?</string>
+    <string name="question_10">What is an adapter?</string>
+    <string name="question_11">What is a singleton?</string>
+    <string name="question_12">How does a recycler view work?</string>
+    <string name="question_13">What is an implicit intent?</string>
+    <string name="question_14">Which directory are layouts in?</string>
+    <string name="question_15">What are containers?</string>
+    <string name="question_16">When is the onStop() method invoked?</string>
+    <string name="question_17">Where is an activity declared so the system can access it?</string>
+    <string name="question_18">Where are icons stored?</string>
+    <string name="question_19">Describe a view</string>
+    <string name="question_20">What is the last lifecycle method of an activity</string>
+
+
+    <string name="radio1_choice01">An "intention" to perform an action</string>
+    <string name="radio1_choice2">A handle to the system</string>
+    <string name="radio1_choice3">It is called once during the Activity Lifecycle</string>
+    <string name="radio1_choice4">Through a class object</string>
+    <string name="radio1_choice5">Cant be customizable, but superior than Activity</string>
+    <string name="radio1_choice6">onAttach()</string>
+    <string name="radio1_choice7">Left over code in trash collector.</string>
+    <string name="radio1_choice8">The space added to the outside of a container</string>
+    <string name="radio1_choice9">All widgets are in nested view groups</string>
+    <string name="radio1_choice10">They add data entries into a ViewGroup</string>
+    <string name="radio1_choice11">A class with an object shared by all other classes</string>
+    <string name="radio1_choice12">It communicates with the views and places them on the screen</string>
+    <string name="radio1_choice13">When you call system default intents</string>
+    <string name="radio1_choice14">res</string>
+    <string name="radio1_choice15">Type of data structure to hold complex values</string>
+    <string name="radio1_choice16">When the user presses the back button</string>
+    <string name="radio1_choice17">In the Manifest directory</string>
+    <string name="radio1_choice18">Drawable</string>
+    <string name="radio1_choice19">Everything visible on the screen</string>
+    <string name="radio1_choice20">onStop()</string>
+
+
+
+    <string name="radio2_choice1">A method of the Click Listener Class</string>
+    <string name="radio2_choice2">Idea flow of an application.</string>
+    <string name="radio2_choice3">It is called when the Activity becomes visible</string>
+    <string name="radio2_choice4">Using a bundle or an intent</string>
+    <string name="radio2_choice5">Offer ability to reuse</string>
+    <string name="radio2_choice6">onCreate()</string>
+    <string name="radio2_choice7">A bundle of information</string>
+    <string name="radio2_choice8">The space added to the inside of a container</string>
+    <string name="radio2_choice9">Widgets are flexible, and in a flat view heirarchy</string>
+    <string name="radio2_choice10">They connect front-end interface to back-end</string>
+    <string name="radio2_choice11">A drop down style list</string>
+    <string name="radio2_choice12">It communicates with an adapter and places views on the screen</string>
+    <string name="radio2_choice13">When you call an application activity from another activity</string>
+    <string name="radio2_choice14">src</string>
+    <string name="radio2_choice15">Holds widgets and objects</string>
+    <string name="radio2_choice16">When a new Activity is opened over a previous one</string>
+    <string name="radio2_choice17">In the src directory</string>
+    <string name="radio2_choice18">Minimap</string>
+    <string name="radio2_choice19">Home Screen of an android device</string>
+    <string name="radio2_choice20">onDestroy()</string>
+
+
+
+</resources>

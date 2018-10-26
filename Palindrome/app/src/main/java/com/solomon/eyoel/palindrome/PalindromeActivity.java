@@ -51,6 +51,8 @@ public class PalindromeActivity extends AppCompatActivity {
         });
 
 
+
+
     }
 
     public void getValues() {
