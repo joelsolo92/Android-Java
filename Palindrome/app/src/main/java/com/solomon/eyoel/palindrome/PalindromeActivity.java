@@ -35,56 +35,63 @@ public class PalindromeActivity extends AppCompatActivity {
                 getValues();
             }
         });
-
         mClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mValue.setText("");
             }
         });
-
         mQuit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finishAffinity();
             }
         });
+<<<<<<< HEAD
 
 
+
+
+=======
+>>>>>>> cee260fa71315d6f6ff9df19206037be11269928
     }
 
     public void getValues() {
 
         String text = "";
+        String regex = "[^a-zA-Z0-9]";
         String reversedText = "";
         text = mValue.getText().toString();
 
         if (text.isEmpty()) {
             Toast.makeText(this, "Fieid can not be empty.", Toast.LENGTH_SHORT).show();
             Log.e("this tag", "error");
-        } else if (text.length() < 3) {
-            Toast.makeText(this, "Your entry must contain atleast 3 letters / numbers", Toast.LENGTH_SHORT).show();
-        }
-        else {
+        }else {
+            String newText = text.replaceAll(regex, "");
 
-            String newText = text.replaceAll("[^a-zA-Z0-9]", "");
-            Log.e("tag", newText);
-
-            Stack stack = new Stack();
-
-            for (int x = 0; x < newText.length(); x++){
-                stack.push(newText.charAt(x));
+            if (newText.length() < 3) {
+                  Toast.makeText(this, "Your entry must contain atleast 3 letters / numbers", Toast.LENGTH_SHORT).show();
             }
+            else {
 
-            while (!stack.isEmpty()){
-                reversedText = reversedText + stack.pop();
+                Log.e("tag", newText);
+
+                Stack stack = new Stack();
+
+                for (int x = 0; x < newText.length(); x++) {
+                    stack.push(newText.charAt(x));
+                }
+
+                while (!stack.isEmpty()) {
+                    reversedText = reversedText + stack.pop();
+                }
+                Log.e("tag", reversedText);
+                if (newText.toLowerCase().equals(reversedText.toLowerCase()))
+                    Toast.makeText(this, "\"" + text + "\" is a Palindrome", Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(this, "\"" + text + "\" is not a Palindrome", Toast.LENGTH_SHORT).show();
+
             }
-            Log.e("tag",reversedText);
-            if (newText.toLowerCase().equals(reversedText.toLowerCase()))
-                Toast.makeText(this,"\"" + text + "\" is a Palindrome",Toast.LENGTH_SHORT).show();
-            else
-                Toast.makeText(this,"\"" + text + "\" is not a Palindrome",Toast.LENGTH_SHORT).show();
-
         }
     }
 }

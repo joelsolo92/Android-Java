@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
+
+=======
+>>>>>>> d6a5cac59ed2686d534b89b03e6f324929837cd3
         <activity android:name=".QuizActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,7 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
+=======
         <activity android:name=".CheatActivity"></activity>
+>>>>>>> d6a5cac59ed2686d534b89b03e6f324929837cd3
     </application>
 
 </manifest>
